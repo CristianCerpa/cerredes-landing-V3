@@ -1,6 +1,25 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const images = [
+    "/fondo1.jpeg",
+    "/fondo2.jpeg",
+    "/fondo3.jpeg",
+    "/fondo4.jpeg",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Cambiar imagen cada 5 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div
       style={{
@@ -10,13 +29,14 @@ export default function Home() {
         overflow: "hidden",
       }}
     >
-      {/* Imagen de fondo */}
+      {/* Imagen de fondo dinámica */}
       <Image
-        src="/fondo1.jpeg"
-        alt="Fondo CERREDES"
+        key={images[currentIndex]} // importante para que Next cambie la imagen
+        src={images[currentIndex]}
+        alt="Fondo Carrusel"
         fill
         priority
-        style={{ objectFit: "cover", zIndex: -1 }}
+        style={{ objectFit: "cover", zIndex: -1, transition: "opacity 1s ease" }}
       />
 
       {/* Texto encima */}
