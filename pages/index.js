@@ -49,7 +49,7 @@ export default function Home() {
               fill
               priority={i === 0}
                style={{
-    objectFit: "cover",        // llena la pantalla
+    objectFit: "contain",        // llena la pantalla
     objectPosition: "center",  // centra la imagen
     minWidth: "100%",
     minHeight: "100%",
