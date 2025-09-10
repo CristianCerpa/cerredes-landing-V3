@@ -26,7 +26,6 @@ export default function Home() {
         overflow: "hidden",
         height: "100vh",
         width: "100%",
-        backgroundColor: "#000", // color de fondo mientras carga la imagen
       }}
     >
       {/* Contenedor del carrusel */}
@@ -49,7 +48,7 @@ export default function Home() {
               alt={`Fondo ${i + 1}`}
               fill
               priority={i === 0}
-              style={{ objectFit: "contain" }} // <-- cambio aquí
+              style={{ objectFit: "cover" }}
             />
           </div>
         ))}
