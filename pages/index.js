@@ -48,7 +48,12 @@ export default function Home() {
               alt={`Fondo ${i + 1}`}
               fill
               priority={i === 0}
-              style={{ objectFit: "scale-down" }}
+               style={{
+    objectFit: "cover",        // llena la pantalla
+    objectPosition: "center",  // centra la imagen
+    minWidth: "100%",
+    minHeight: "100%",
+  }}
             />
           </div>
         ))}
