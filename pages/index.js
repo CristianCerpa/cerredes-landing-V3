@@ -1,15 +1,8 @@
 export default function Home() {
   return (
-    <div style={{ 
-      display: 'flex', 
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      height: '100vh',
-      backgroundColor: '#000',
-      color: '#fff',
-      fontSize: '2rem'
-    }}>
-      <p>Hola, Next.js en Vercel 🚀</p>
+    <div style={{ textAlign: 'center', padding: '2rem' }}>
+      <h1>Hola CERREDES 🚀</h1>
+      <p>Proyecto Next.js desplegado en Vercel</p>
     </div>
   );
 }
