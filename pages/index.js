@@ -28,11 +28,26 @@ export default function Home() {
 
         {/* Desktop Menu */}
         <nav style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-          <ul style={{ display: 'flex', listStyle: 'none', gap: '2rem', margin: 0, padding: 0 }}>
+          <ul style={{
+            display: 'flex',
+            listStyle: 'none',
+            gap: '2rem',
+            margin: 0,
+            padding: 0
+          }}>
             {menuItems.map((item) => (
-              <li key={item} style={{ cursor: 'pointer', color: '#fff', padding: '0.5rem 0', transition: 'all 0.3s' }}
-                  onMouseEnter={e => e.currentTarget.style.borderBottom = '2px solid orange'}
-                  onMouseLeave={e => e.currentTarget.style.borderBottom = 'none'}>
+              <li 
+                key={item} 
+                style={{
+                  cursor: 'pointer', 
+                  color: '#fff',
+                  position: 'relative',
+                  padding: '0.5rem 0',
+                  transition: 'all 0.3s'
+                }}
+                onMouseEnter={e => e.currentTarget.style.borderBottom = '2px solid orange'}
+                onMouseLeave={e => e.currentTarget.style.borderBottom = 'none'}
+              >
                 {item}
               </li>
             ))}
@@ -41,32 +56,46 @@ export default function Home() {
           {/* Carrito */}
           <div style={{ fontSize: '1.5rem', color: 'orange', cursor: 'pointer' }}>🛒</div>
         </nav>
+
+        {/* Mobile Menu Button */}
+        <div 
+          onClick={() => setMenuOpen(!menuOpen)} 
+          style={{ display: 'none', cursor: 'pointer', color: 'orange', fontSize: '1.5rem' }}
+        >
+          ☰
+        </div>
       </header>
 
       {/* Main */}
       <main style={{
         position: 'relative',
+        overflow: 'hidden',
         height: '80vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         textAlign: 'center',
-        overflow: 'hidden'
+        padding: '0 1rem'
       }}>
         <Image
-          src="/fondo1.jpeg"
+          src="/fondo1.jpeg"      // <-- aquí la extensión correcta
           alt="Fondo CERREDES"
           fill
           priority
           style={{ objectFit: 'cover', zIndex: -1 }}
         />
+
         <p style={{ color: '#fff', fontSize: '2rem', zIndex: 1 }}>
           Servicios de consultoría y venta de productos
         </p>
       </main>
 
       {/* Footer */}
-      <footer style={{ textAlign: 'center', padding: '1rem', borderTop: '2px solid orange' }}>
+      <footer style={{
+        textAlign: 'center',
+        padding: '1rem',
+        borderTop: '2px solid orange'
+      }}>
         <p style={{ color: '#fff' }}>© 2025 CERREDES SpA</p>
       </footer>
     </div>
