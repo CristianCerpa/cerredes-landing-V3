@@ -48,7 +48,7 @@ export default function Home() {
               alt={`Fondo ${i + 1}`}
               fill
               priority={i === 0}
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "scale-down" }}
             />
           </div>
         ))}
