@@ -37,9 +37,9 @@ export default function Home() {
     left: 0,
     width: "100%",
     display: "flex",
-    justifyContent: "space-between", // logo a la izquierda, menú a la derecha
+    justifyContent: "space-between",
     alignItems: "center",
-    padding: "1rem 4rem", // margen igual a izquierda y derecha
+    padding: "1rem 2rem", // margen del logo a la izquierda
     zIndex: 10,
     background: "linear-gradient(to right, #0a0a0a, #1c1c1c, #333333, #1c1c1c, #0a0a0a)",
   }}
@@ -55,6 +55,7 @@ export default function Home() {
       display: "flex",
       alignItems: "center",
       gap: "2rem",
+      marginRight: "2rem", // mismo margen que la izquierda del logo
     }}
   >
     <ul
