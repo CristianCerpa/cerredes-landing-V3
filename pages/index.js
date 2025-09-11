@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Figtree } from "next/font/google";
 
 const figtree = Figtree({ 
-  weight: "500",   // Medium
+  weight: "400",   // Regular
   subsets: ["latin"] 
 });
 
