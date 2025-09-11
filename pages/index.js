@@ -25,7 +25,7 @@ export default function Home() {
         position: "relative",
         overflow: "hidden",
         height: "100vh",
-        width: "100%",
+        width: "100vw",
       }}
     >
       {/* Contenedor del carrusel */}
@@ -33,8 +33,8 @@ export default function Home() {
         style={{
           display: "flex",
           height: "100%",
-          width: `${images.length * 100}%`,
-          transform: `translateX(-${currentIndex * (100 / images.length)}%)`,
+          width: `${images.length * 100}vw`,
+          transform: `translateX(-${currentIndex * 100}vw)`,
           transition: "transform 1s ease-in-out",
         }}
       >
@@ -43,7 +43,7 @@ export default function Home() {
 key={i}
   style={{
     position: "relative",
-    width: "100vw",
+    flex: "0 0 100vw", //
     height: "100vh",
     flexShrink: 0,
   }}
@@ -54,8 +54,9 @@ key={i}
               fill
               priority={i === 0}
                style={{
-    objectFit: "contain",        // llena la pantalla
+    objectFit: "cover",        // llena la pantalla
     objectPosition: "center",  // centra la imagen
+                backgroundColor: "black", //
     minWidth: "100%",
     minHeight: "100%",
   }}
