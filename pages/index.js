@@ -150,7 +150,7 @@ export default function Home() {
     textAlign: "left",    // alineación del texto a la izquierda
     zIndex: 2,
     lineHeight: "1.4",    // separación entre frases
-    letterSpacing: "2px",
+    letterSpacing: "1.5px",
   }}
 >
 <div className={montserratMedium.className}>
