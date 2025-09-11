@@ -41,7 +41,7 @@ export default function Home() {
           padding: "1rem 2rem",
           zIndex: 10,
           background: "#000",         // fondo negro
-          borderBottom: "2px solid orange" // línea naranja
+          borderBottom: "none" // línea naranja
         }}
       >
         {/* Logo */}
