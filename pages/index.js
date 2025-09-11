@@ -106,13 +106,14 @@ export default function Home() {
 
       {/* Contenedor del carrusel */}
       <div
-        style={{
-          display: "flex",
-          height: "100%",
-          width: `${images.length * 100}%`, // ancho proporcional
-          transform: `translateX(-${currentIndex * (100 / images.length)}%)`,
-          transition: "transform 1s ease-in-out",
-        }}
+  style={{
+    display: "flex",
+    height: "calc(100vh - 80px)", // altura total menos la barra de menú
+    width: `${images.length * 100}vw`,
+    transform: `translateX(-${currentIndex * 100}vw)`,
+    transition: "transform 1s ease-in-out",
+    marginTop: "80px", // empuja el carrusel debajo de la barra
+  }}
       >
         {images.map((src, i) => (
           <div
