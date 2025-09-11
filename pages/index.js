@@ -28,7 +28,7 @@ export default function Home() {
         width: "100vw",
       }}
     >
-      {/* Header con logo y menú */}
+      {/* Header con logo, menú y carrito */}
       <header
         style={{
           position: "absolute",       // fijo sobre el carrusel
@@ -40,8 +40,9 @@ export default function Home() {
           alignItems: "center",
           padding: "1rem 2rem",
           zIndex: 10,
-          background: "linear-gradient(to right, #0a0a0a, #1c1c1c, #333333, #1c1c1c, #0a0a0a)",
-          borderBottom: "none" // línea naranja
+          background:
+            "linear-gradient(to right, #0a0a0a, #1a1a1a, #333333, #1a1a1a, #0a0a0a)",
+          borderBottom: "none", // línea naranja eliminada
         }}
       >
         {/* Logo */}
@@ -49,8 +50,8 @@ export default function Home() {
           <Image src="/logo.png" alt="Logo" width={120} height={50} />
         </div>
 
-        {/* Menú */}
-        <nav>
+        {/* Menú + carrito */}
+        <nav style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
           <ul
             style={{
               display: "flex",
@@ -65,6 +66,11 @@ export default function Home() {
             <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
             <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
           </ul>
+
+          {/* Carrito */}
+          <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>
+            🛒
+          </div>
         </nav>
       </header>
 
@@ -94,8 +100,8 @@ export default function Home() {
               fill
               priority={i === 0}
               style={{
-                objectFit: "cover", // llena la pantalla
-                objectPosition: "center", // centra la imagen
+                objectFit: "cover", // mantiene la imagen completa
+                objectPosition: "center",
                 backgroundColor: "black",
                 minWidth: "100%",
                 minHeight: "100%",
