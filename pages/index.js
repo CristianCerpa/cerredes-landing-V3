@@ -92,7 +92,7 @@ export default function Home() {
 </ul>
 
           {/* Carrito de compras */}
-          <div style={{ fontSize: "2.5rem", color: "#ff6600", cursor: "pointer" }}>🛒</div>
+          <div style={{ fontSize: "2rem", color: "#ff6600", cursor: "pointer" }}>🛒</div>
         </nav>
       </header>
 
@@ -131,21 +131,22 @@ export default function Home() {
         ))}
       </div>
 
-      {/* Texto encima */}
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          color: "#fff",
-          fontSize: "2rem",
-          textAlign: "center",
-          zIndex: 2,
-        }}
-      >
-        Servicios de consultoría y venta de productos
-      </div>
+{/* Texto encima */}
+<div
+  style={{
+    position: "absolute",
+    bottom: "5%",        // lo mandamos hacia abajo
+    right: "5%",         // lo alineamos a la derecha
+    color: "#fff",
+    fontSize: "2rem",
+    textAlign: "right",  // alineación del texto a la derecha
+    zIndex: 2,
+    lineHeight: "1.4",   // separación entre frases
+  }}
+>
+  <div>Servicios de</div>
+  <div>Consultoría y Venta de productos</div>
+</div>
     </main>
   );
 }
