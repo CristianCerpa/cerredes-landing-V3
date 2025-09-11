@@ -104,8 +104,8 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Contenedor del carrusel */}
-      <div
+{/* Contenedor del carrusel */}
+<div
   style={{
     display: "flex",
     height: "calc(100vh - 80px)", // altura total menos la barra de menú
@@ -114,31 +114,31 @@ export default function Home() {
     transition: "transform 1s ease-in-out",
     marginTop: "80px", // empuja el carrusel debajo de la barra
   }}
-      >
-        {images.map((src, i) => (
-          <div
-            key={i}
-            style={{
-              position: "relative",
-              flex: `0 0 ${100 / images.length}%`, // ancho proporcional
-              height: "100%",
-              flexShrink: 0,
-            }}
-          >
-            <Image
-              src={src}
-              alt={`Fondo ${i + 1}`}
-              fill
-              priority={i === 0}
-              style={{
-                objectFit: "cover", // mantiene la imagen completa
-                objectPosition: "center",
-                backgroundColor: "black",
-              }}
-            />
-          </div>
-        ))}
-      </div>
+>
+  {images.map((src, i) => (
+    <div
+      key={i}
+      style={{
+        position: "relative",
+        flex: "0 0 100vw", // ancho completo
+        height: "100%",
+        flexShrink: 0,
+      }}
+    >
+      <Image
+        src={src}
+        alt={`Fondo ${i + 1}`}
+        fill
+        priority={i === 0}
+        style={{
+          objectFit: "cover",
+          objectPosition: "center",
+          backgroundColor: "black",
+        }}
+      />
+    </div>
+  ))}
+</div>
 
 {/* Texto encima */}
 <div
