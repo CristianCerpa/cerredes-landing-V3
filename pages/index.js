@@ -11,6 +11,10 @@ const montserrat = Montserrat({
   weight: "300", // Light
   subsets: ["latin"],
 });
+const montserratMedium = Montserrat({
+  weight: "500", // Medium
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const images = [
@@ -149,8 +153,8 @@ export default function Home() {
     lineHeight: "1.4",    // separación entre frases
   }}
 >
-  <div>Servicios de</div>
-  <div>Consultoría y Venta de productos</div>
+<div className={montserratMedium.className}>Servicios de</div>
+  <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
     </main>
   );
