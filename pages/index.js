@@ -56,7 +56,7 @@ export default function Home() {
           alignItems: "center",
           padding: "1rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
-          background: "linear-gradient(to right, #0a0a0a, #1c1c1c, #333333, #1c1c1c, #0a0a0a)",
+          background: "linear-gradient(to right, #1a1a1a, #2c2c2c, #444444, #2c2c2c, #1a1a1a)",
         }}
       >
         {/* Logo */}
