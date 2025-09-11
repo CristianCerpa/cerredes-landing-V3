@@ -1,12 +1,16 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Figtree } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 const figtree = Figtree({ 
   weight: "400",   // Regular
   subsets: ["latin"] 
 });
-
+const montserrat = Montserrat({
+  weight: "300", // Light
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const images = [
@@ -133,15 +137,16 @@ export default function Home() {
 
 {/* Texto encima */}
 <div
+  className={montserrat.className} // <-- aplicamos Montserrat Light
   style={{
     position: "absolute",
     bottom: "5%",        // lo mandamos hacia abajo
-    left: "5%",         // lo alineamos a la izquierda
+    left: "5%",           // lo alineamos a la izquierda
     color: "#fff",
     fontSize: "3rem",
-    textAlign: "left",  // alineación del texto a la izquierda
+    textAlign: "left",    // alineación del texto a la izquierda
     zIndex: 2,
-    lineHeight: "1.4",   // separación entre frases
+    lineHeight: "1.4",    // separación entre frases
   }}
 >
   <div>Servicios de</div>
