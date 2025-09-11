@@ -7,7 +7,7 @@ const figtree = Figtree({
   weight: "400",   // Regular
   subsets: ["latin"] 
 });
-const montserrat = Montserrat({
+const montserratLight = Montserrat({
   weight: "300", // Light
   subsets: ["latin"],
 });
