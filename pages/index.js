@@ -36,7 +36,7 @@ export default function Home() {
           left: 0,
           width: "100%",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "center",
           alignItems: "center",
           padding: "1rem 2rem",
           zIndex: 10,
@@ -45,33 +45,35 @@ export default function Home() {
           borderBottom: "none", // línea naranja eliminada
         }}
       >
+
         {/* Logo */}
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <Image src="/logo.png" alt="Logo" width={120} height={50} />
+<div style={{ position: "absolute", left: "2rem" }}>
+<Image src="/logo.png" alt="Logo" width={120} height={50} />
         </div>
 
-        {/* Menú + carrito */}
-        <nav style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
-          <ul
-            style={{
-              display: "flex",
-              listStyle: "none",
-              gap: "2rem",
-              margin: 0,
-              padding: 0,
-            }}
-          >
-            <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
-            <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
-            <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
-            <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
-          </ul>
+{/* Menú + carrito */}
+<nav style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
+  <ul
+    style={{
+      display: "flex",
+      listStyle: "none",
+      gap: "2rem",
+      margin: 0,
+      padding: 0,
+    }}
+  >
+    <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
+    <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
+    <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
+    <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
+  </ul>
 
-          {/* Carrito */}
-          <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>
-            🛒
-          </div>
-        </nav>
+  {/* Carrito de compras */}
+  <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>
+    🛒
+  </div>
+</nav>
+
       </header>
 
       {/* Contenedor del carrusel */}
