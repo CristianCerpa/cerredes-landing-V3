@@ -143,7 +143,7 @@ export default function Home() {
 <div
   style={{
     position: "absolute",
-    bottom: "5%",        // lo mandamos hacia abajo
+    bottom: "10%",        // lo mandamos hacia abajo
     left: "5%",           // lo alineamos a la izquierda
     color: "#fff",
     fontSize: "2.8rem",
