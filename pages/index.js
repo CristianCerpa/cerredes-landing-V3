@@ -143,7 +143,7 @@ export default function Home() {
     bottom: "5%",        // lo mandamos hacia abajo
     left: "5%",           // lo alineamos a la izquierda
     color: "#fff",
-    fontSize: "2rem",
+    fontSize: "2.5rem",
     textAlign: "left",    // alineación del texto a la izquierda
     zIndex: 2,
     lineHeight: "1.4",    // separación entre frases
