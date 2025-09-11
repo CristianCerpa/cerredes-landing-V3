@@ -150,7 +150,7 @@ export default function Home() {
     fontSize: "2.5rem",
     textAlign: "left",    // alineación del texto a la izquierda
     zIndex: 2,
-    lineHeight: "1.4",    // separación entre frases
+    lineHeight: "1.2",    // separación entre frases
     letterSpacing: "1px",
   }}
 >
