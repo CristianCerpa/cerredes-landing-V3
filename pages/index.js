@@ -100,7 +100,6 @@ export default function Home() {
 </ul>
 
           {/* Carrito de compras */}
-          <div style={{ fontSize: "2rem", color: "#ff6600", cursor: "pointer" }}>🛒</div>
         </nav>
       </header>
 
