@@ -8,7 +8,7 @@ const figtree = Figtree({
   subsets: ["latin"] 
 });
 const montserratLight = Montserrat({
-  weight: "300", // Light
+  weight: "200", // Light
   subsets: ["latin"],
 });
 const montserratMedium = Montserrat({
