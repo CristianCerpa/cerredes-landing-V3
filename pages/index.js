@@ -23,68 +23,68 @@ export default function Home() {
     <main
       style={{
         position: "relative",
-        overflow: "hidden",
+        overflow: "hidden", // evita scroll horizontal
         height: "100vh",
-        width: "100vw",
+        width: "100%", // evita scroll horizontal
       }}
     >
 
       {/* Header con logo, menú y carrito */}
-<header
-  style={{
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "1rem 2rem", // margen del logo a la izquierda
-    zIndex: 10,
-    background: "linear-gradient(to right, #0a0a0a, #1c1c1c, #333333, #1c1c1c, #0a0a0a)",
-  }}
->
-  {/* Logo */}
-  <div>
-    <Image src="/logo.png" alt="Logo" width={120} height={50} />
-  </div>
+      <header
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "1rem 2rem", // margen del logo a la izquierda
+          zIndex: 10,
+          background: "linear-gradient(to right, #0a0a0a, #1c1c1c, #333333, #1c1c1c, #0a0a0a)",
+        }}
+      >
+        {/* Logo */}
+        <div>
+          <Image src="/logo.png" alt="Logo" width={120} height={50} />
+        </div>
 
-  {/* Menú + carrito */}
-  <nav
-    style={{
-      display: "flex",
-      alignItems: "center",
-      gap: "2rem",
-      marginRight: "2rem", // mismo margen que la izquierda del logo
-    }}
-  >
-    <ul
-      style={{
-        display: "flex",
-        listStyle: "none",
-        gap: "2rem",
-        margin: 0,
-        padding: 0,
-      }}
-    >
-      <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
-      <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
-      <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
-      <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
-    </ul>
+        {/* Menú + carrito */}
+        <nav
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "2rem",
+            marginRight: "2rem", // margen al final, mismo que el del logo
+          }}
+        >
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              gap: "2rem",
+              margin: 0,
+              padding: 0,
+            }}
+          >
+            <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
+            <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
+            <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
+            <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
+          </ul>
 
-    {/* Carrito de compras */}
-    <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>🛒</div>
-  </nav>
-</header>
+          {/* Carrito de compras */}
+          <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>🛒</div>
+        </nav>
+      </header>
 
       {/* Contenedor del carrusel */}
       <div
         style={{
           display: "flex",
           height: "100%",
-          width: `${images.length * 100}vw`,
-          transform: `translateX(-${currentIndex * 100}vw)`,
+          width: `${images.length * 100}%`, // ancho proporcional
+          transform: `translateX(-${currentIndex * (100 / images.length)}%)`,
           transition: "transform 1s ease-in-out",
         }}
       >
@@ -93,8 +93,8 @@ export default function Home() {
             key={i}
             style={{
               position: "relative",
-              flex: "0 0 100vw",
-              height: "100vh",
+              flex: `0 0 ${100 / images.length}%`, // ancho proporcional
+              height: "100%",
               flexShrink: 0,
             }}
           >
@@ -107,8 +107,6 @@ export default function Home() {
                 objectFit: "cover", // mantiene la imagen completa
                 objectPosition: "center",
                 backgroundColor: "black",
-                minWidth: "100%",
-                minHeight: "100%",
               }}
             />
           </div>
