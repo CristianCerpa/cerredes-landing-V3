@@ -40,7 +40,7 @@ export default function Home() {
           alignItems: "center",
           padding: "1rem 2rem",
           zIndex: 10,
-          background: "#000",         // fondo negro
+          background: "linear-gradient(to right, #1c1c1c, #2a2a2a)",
           borderBottom: "none" // línea naranja
         }}
       >
