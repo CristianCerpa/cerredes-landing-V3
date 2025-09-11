@@ -40,8 +40,13 @@ export default function Home() {
       >
         {images.map((src, i) => (
           <div
-            key={i}
-            style={{ position: "relative", flex: "0 0 100%", height: "100%" }}
+key={i}
+  style={{
+    position: "relative",
+    width: "100vw",
+    height: "100vh",
+    flexShrink: 0,
+  }}
           >
             <Image
               src={src}
