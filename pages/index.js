@@ -29,36 +29,31 @@ export default function Home() {
       }}
     >
       {/* Header con logo, menú y carrito */}
-      <header
-        style={{
-          position: "absolute",       // fijo sobre el carrusel
-          top: 0,
-          left: 0,
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "1rem 2rem",
-          zIndex: 10,
-          background:
-            "linear-gradient(to right, #0a0a0a, #1a1a1a, #333333, #1a1a1a, #0a0a0a)",
-          borderBottom: "none", // línea naranja eliminada
-        }}
-      >
-
-        {/* Logo */}
-<div style={{ position: "absolute", left: "2rem" }}>
-<Image src="/logo.png" alt="Logo" width={120} height={50} />
- 
+  <header
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    display: "flex",
+    alignItems: "center",
+    padding: "1rem 2rem",  // margen del logo
+    zIndex: 10,
+    background: "linear-gradient(to right, #0a0a0a, #1c1c1c, #333333, #1c1c1c, #0a0a0a)",
+  }}
+>
+  {/* Logo */}
+  <div>
+    <Image src="/logo.png" alt="Logo" width={120} height={50} />
   </div>
+
   {/* Menú + carrito */}
   <nav
     style={{
       display: "flex",
       alignItems: "center",
       gap: "2rem",
-      marginLeft: "auto",       // empuja el menú hacia la derecha
-      paddingRight: "2rem",     // deja espacio desde el borde derecho
+      marginLeft: "2rem", // mismo margen que el logo
     }}
   >
     <ul
@@ -79,8 +74,7 @@ export default function Home() {
     {/* Carrito de compras */}
     <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>🛒</div>
   </nav>
-
-      </header>
+</header>
 
       {/* Contenedor del carrusel */}
       <div
