@@ -28,16 +28,18 @@ export default function Home() {
         width: "100vw",
       }}
     >
+
       {/* Header con logo, menú y carrito */}
-  <header
+<header
   style={{
     position: "absolute",
     top: 0,
     left: 0,
     width: "100%",
     display: "flex",
+    justifyContent: "space-between", // logo a la izquierda, menú a la derecha
     alignItems: "center",
-    padding: "1rem 2rem",  // margen del logo
+    padding: "1rem 2rem", // margen interno de todo el header
     zIndex: 10,
     background: "linear-gradient(to right, #0a0a0a, #1c1c1c, #333333, #1c1c1c, #0a0a0a)",
   }}
@@ -53,7 +55,7 @@ export default function Home() {
       display: "flex",
       alignItems: "center",
       gap: "2rem",
-      marginLeft: "2rem", // mismo margen que el logo
+      marginRight: "2rem", // margen desde el borde derecho
     }}
   >
     <ul
