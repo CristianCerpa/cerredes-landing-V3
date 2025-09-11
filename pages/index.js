@@ -28,6 +28,46 @@ export default function Home() {
         width: "100vw",
       }}
     >
+      {/* Header con logo y menú */}
+      <header
+        style={{
+          position: "absolute",       // fijo sobre el carrusel
+          top: 0,
+          left: 0,
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          padding: "1rem 2rem",
+          zIndex: 10,
+          background: "#000",         // fondo negro
+          borderBottom: "2px solid orange" // línea naranja
+        }}
+      >
+        {/* Logo */}
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <Image src="/logo.png" alt="Logo" width={120} height={50} />
+        </div>
+
+        {/* Menú */}
+        <nav>
+          <ul
+            style={{
+              display: "flex",
+              listStyle: "none",
+              gap: "2rem",
+              margin: 0,
+              padding: 0,
+            }}
+          >
+            <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
+            <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
+            <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
+            <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
+          </ul>
+        </nav>
+      </header>
+
       {/* Contenedor del carrusel */}
       <div
         style={{
@@ -40,26 +80,26 @@ export default function Home() {
       >
         {images.map((src, i) => (
           <div
-key={i}
-  style={{
-    position: "relative",
-    flex: "0 0 100vw", //
-    height: "100vh",
-    flexShrink: 0,
-  }}
+            key={i}
+            style={{
+              position: "relative",
+              flex: "0 0 100vw",
+              height: "100vh",
+              flexShrink: 0,
+            }}
           >
             <Image
               src={src}
               alt={`Fondo ${i + 1}`}
               fill
               priority={i === 0}
-               style={{
-    objectFit: "cover",        // llena la pantalla
-    objectPosition: "center",  // centra la imagen
-                backgroundColor: "black", //
-    minWidth: "100%",
-    minHeight: "100%",
-  }}
+              style={{
+                objectFit: "cover", // llena la pantalla
+                objectPosition: "center", // centra la imagen
+                backgroundColor: "black",
+                minWidth: "100%",
+                minHeight: "100%",
+              }}
             />
           </div>
         ))}
