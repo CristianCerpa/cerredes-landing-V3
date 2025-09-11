@@ -1,5 +1,12 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { Figtree } from "next/font/google";
+
+const figtree = Figtree({ 
+  weight: "500",   // Medium
+  subsets: ["latin"] 
+});
+
 
 export default function Home() {
   const images = [
@@ -58,20 +65,21 @@ export default function Home() {
             marginRight: "2rem", // margen al final, mismo que el del logo
           }}
         >
-          <ul
-            style={{
-              display: "flex",
-              listStyle: "none",
-              gap: "2rem",
-              margin: 0,
-              padding: 0,
-            }}
-          >
-            <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
-            <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
-            <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
-            <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
-          </ul>
+<ul
+  className={figtree.className}   // ← aquí aplicas la fuente
+  style={{
+    display: "flex",
+    listStyle: "none",
+    gap: "2rem",
+    margin: 0,
+    padding: 0,
+  }}
+>
+  <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
+  <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
+  <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
+  <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
+</ul>
 
           {/* Carrito de compras */}
           <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>🛒</div>
