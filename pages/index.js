@@ -153,6 +153,8 @@ export default function Home() {
   }}
 >
 <div className={montserratMedium.className}>Servicios de</div>
+  <span style={{ color: "orange" }}>Servicios</span> de
+  </div>
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
     </main>
