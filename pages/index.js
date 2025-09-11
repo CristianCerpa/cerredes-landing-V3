@@ -66,7 +66,7 @@ export default function Home() {
           }}
         >
 <ul
-  className={figtree.className}   // ← aquí aplicas la fuente
+  className={figtree.className} // aplica la fuente Figtree Regular
   style={{
     display: "flex",
     listStyle: "none",
@@ -75,10 +75,20 @@ export default function Home() {
     padding: 0,
   }}
 >
-  <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
-  <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
-  <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
-  <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
+  {["Inicio", "Servicios", "Productos", "Contacto"].map((item, i) => (
+    <li
+      key={i}
+      style={{
+        color: "#fff",
+        cursor: "pointer",
+        transition: "color 0.3s ease",
+      }}
+      onMouseEnter={(e) => (e.target.style.color = "orange")}
+      onMouseLeave={(e) => (e.target.style.color = "#fff")}
+    >
+      {item}
+    </li>
+  ))}
 </ul>
 
           {/* Carrito de compras */}
