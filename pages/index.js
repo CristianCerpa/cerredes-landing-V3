@@ -49,30 +49,36 @@ export default function Home() {
         {/* Logo */}
 <div style={{ position: "absolute", left: "2rem" }}>
 <Image src="/logo.png" alt="Logo" width={120} height={50} />
-        </div>
-
-{/* Menú y carrito */}
-<nav style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
-  <ul
+ 
+  </div>
+  {/* Menú + carrito */}
+  <nav
     style={{
       display: "flex",
-      listStyle: "none",
+      alignItems: "center",
       gap: "2rem",
-      margin: 0,
-      padding: 0,
+      marginLeft: "auto",       // empuja el menú hacia la derecha
+      paddingRight: "2rem",     // deja espacio desde el borde derecho
     }}
   >
-    <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
-    <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
-    <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
-    <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
-  </ul>
+    <ul
+      style={{
+        display: "flex",
+        listStyle: "none",
+        gap: "2rem",
+        margin: 0,
+        padding: 0,
+      }}
+    >
+      <li style={{ color: "#fff", cursor: "pointer" }}>Inicio</li>
+      <li style={{ color: "#fff", cursor: "pointer" }}>Servicios</li>
+      <li style={{ color: "#fff", cursor: "pointer" }}>Productos</li>
+      <li style={{ color: "#fff", cursor: "pointer" }}>Contacto</li>
+    </ul>
 
-  {/* Carrito de compras */}
-  <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>
-    🛒
-  </div>
-</nav>
+    {/* Carrito de compras */}
+    <div style={{ fontSize: "1.5rem", color: "orange", cursor: "pointer" }}>🛒</div>
+  </nav>
 
       </header>
 
