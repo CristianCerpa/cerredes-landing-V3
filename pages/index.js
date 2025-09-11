@@ -92,7 +92,7 @@ export default function Home() {
 </ul>
 
           {/* Carrito de compras */}
-          <div style={{ fontSize: "1.5rem", color: "#ff6600", cursor: "pointer" }}>🛒</div>
+          <div style={{ fontSize: "1rem", color: "#ff6600", cursor: "pointer" }}>🛒</div>
         </nav>
       </header>
 
