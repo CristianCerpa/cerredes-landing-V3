@@ -152,7 +152,7 @@ export default function Home() {
     lineHeight: "1.4",    // separación entre frases
   }}
 >
-<div className={montserratMedium.className}>Servicios de</div>
+<div className={montserratMedium.className}>
   <span style={{ color: "orange" }}>Servicios</span> de
   </div>
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
