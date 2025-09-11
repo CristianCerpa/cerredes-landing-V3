@@ -51,7 +51,7 @@ export default function Home() {
 <Image src="/logo.png" alt="Logo" width={120} height={50} />
         </div>
 
-{/* Menú + carrito */}
+{/* Menú y carrito */}
 <nav style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
   <ul
     style={{
