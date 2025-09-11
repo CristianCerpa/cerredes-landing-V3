@@ -70,7 +70,7 @@ export default function Home() {
             display: "flex",
             alignItems: "center",
             gap: "2rem",
-            marginRight: "2rem", // margen al final, mismo que el del logo
+            marginRight: "5rem", // margen al final, mismo que el del logo
           }}
         >
 <ul
