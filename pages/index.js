@@ -141,7 +141,6 @@ export default function Home() {
 
 {/* Texto encima */}
 <div
-  className={montserrat.className} // <-- aplicamos Montserrat Light
   style={{
     position: "absolute",
     bottom: "5%",        // lo mandamos hacia abajo
