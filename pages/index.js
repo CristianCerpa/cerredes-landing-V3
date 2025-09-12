@@ -179,14 +179,14 @@ className={figtree.className}
   style={{
     width: "100%",            // ocupa todo el ancho
     backgroundColor: "#fff",  // color de la barra (blanco)
-    color: "#333333",          // color del texto
+    color: "#000000",          // color del texto
     textAlign: "center",      // centrado horizontal
-    padding: "0.2rem 0",      // altura de la barra
-    fontSize: "0.9rem",       // tamaño del texto
+    padding: "0.1rem 0",      // altura de la barra
+    fontSize: "0.5rem",       // tamaño del texto
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
-  © 2025 Cerredes Spa
+  © 2025 Cerredes SpA
 </footer>
  </>
   );
