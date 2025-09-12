@@ -159,7 +159,7 @@ export default function Home() {
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
 
-  {/* Footer delgado */}
+  {/* Footer */}
 <div
   style={{
     position: "fixed",      // fija al fondo de la pantalla
