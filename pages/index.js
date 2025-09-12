@@ -173,5 +173,15 @@ export default function Home() {
 </div>
   
     </main>
+
+{/* Línea blanca al final de la página */}
+<div
+  style={{
+    width: "100%",
+    height: "2px",          // grosor de la línea
+    backgroundColor: "#fff" // color blanco
+  }}
+></div>
+
   );
 }
