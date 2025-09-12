@@ -176,7 +176,7 @@ export default function Home() {
       <div
         style={{
           width: "100%",
-          height: "2px",          // grosor de la línea
+          height: "20px",          // grosor de la línea
           backgroundColor: "#fff" // color blanco
         }}
       ></div>
