@@ -175,10 +175,11 @@ export default function Home() {
     </main>
   
 <footer
+className={figtree.className}
   style={{
     width: "100%",            // ocupa todo el ancho
     backgroundColor: "#fff",  // color de la barra (blanco)
-    color: "orange",          // color del texto
+    color: "#333333",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.2rem 0",      // altura de la barra
     fontSize: "0.9rem",       // tamaño del texto
