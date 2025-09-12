@@ -177,7 +177,7 @@ export default function Home() {
         style={{
           width: "100%",
           height: "20px",          // grosor de la línea
-          backgroundColor: "#fff" // color blanco
+          backgroundColor: "#FF7F00" // color blanco
         }}
       ></div>
         
