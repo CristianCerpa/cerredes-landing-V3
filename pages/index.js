@@ -171,7 +171,7 @@ export default function Home() {
     letterSpacing: "1px",
   }}
 >
-  © 2025 Cerredes SpA
+  © 2025 Cerredes Spa
 </footer>
 
     </main>
