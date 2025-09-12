@@ -57,7 +57,7 @@ export default function Home() {
           padding: "1rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
           background: "linear-gradient(to right, #1a1a1a, #2c2c2c, #444444, #2c2c2c, #1a1a1a)",
-          borderBottom: "3px solid orange", // <-- línea naranja
+          borderBottom: "3px solid white", // <-- línea blanca
         }}
       >
         {/* Logo */}
