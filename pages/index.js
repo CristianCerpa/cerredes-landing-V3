@@ -57,7 +57,6 @@ export default function Home() {
           padding: "1rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
           background: "linear-gradient(to right, #1a1a1a, #2c2c2c, #444444, #2c2c2c, #1a1a1a)",
-          borderBottom: "6px solid white", // <-- línea blanca
         }}
       >
         {/* Logo */}
@@ -100,8 +99,21 @@ export default function Home() {
   ))}
 </ul>
 
-          {/* Carrito de compras */}
+{/* Carrito de compras */}
         </nav>
+
+{/* Línea blanca inferior */}
+  <div
+    style={{
+      position: "absolute",
+      bottom: 0,
+      left: 0,
+      width: "100%",
+      height: "2px",       // grosor de la línea
+      backgroundColor: "#fff", // color blanco
+    }}
+  ></div>
+          
       </header>
 
 {/* Contenedor del carrusel */}
@@ -159,6 +171,7 @@ export default function Home() {
   </div>
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
+  
     </main>
   );
 }
