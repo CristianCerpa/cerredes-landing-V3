@@ -186,6 +186,6 @@ export default function Home() {
 >
   © 2025 Cerredes SpA
 </footer>
-
+ </>
   );
 }
