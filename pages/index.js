@@ -172,15 +172,15 @@ export default function Home() {
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
 
-  {/* Línea blanca al final de la página */}
-      <div
-        style={{
-          width: "100%",
-          height: "20px",          // grosor de la línea
-          backgroundColor: "#FF7F00" // color blanco
-        }}
-      ></div>
-        
+ {/* Barra inferior */}
+<div
+  style={{
+    width: "100%",           // ancho completo
+    height: "2px",           // grosor de la barra
+    backgroundColor: "#E0E0E0", // color grafito claro para contraste
+    marginTop: "0",          // se pega al final del contenido
+  }}
+></div> 
     </main>
   );
 }
