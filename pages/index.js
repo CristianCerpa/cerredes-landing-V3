@@ -159,20 +159,6 @@ export default function Home() {
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
 
-<footer
-  className={figtree.className}
-  style={{
-    width: "100%",
-    backgroundColor: "#fff",   // barra blanca
-    color: "#333333",          // letras grafito
-    textAlign: "center",
-    padding: "0.5rem 0",
-    fontSize: "0.9rem",
-    letterSpacing: "1px",
-  }}
->
-  © 2025 Cerredes Spa
-</footer>
     </main>
   );
 }
