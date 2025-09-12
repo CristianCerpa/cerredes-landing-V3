@@ -176,7 +176,7 @@ export default function Home() {
 <div
   style={{
     width: "100%",           // ancho completo
-    height: "2px",           // grosor de la barra
+    height: "10px",           // grosor de la barra
     backgroundColor: "#E0E0E0", // color grafito claro para contraste
     marginTop: "0",          // se pega al final del contenido
   }}
