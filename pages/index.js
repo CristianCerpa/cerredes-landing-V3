@@ -167,7 +167,7 @@ export default function Home() {
     left: 0,
     width: "100%",
     backgroundColor: "#fff", // barra blanca
-    color: "orange",         // texto en naranja
+    color: "#333333",         // texto en naranja
     textAlign: "center",
     padding: "5px 0",        // delgado
     fontSize: "0.9rem",
