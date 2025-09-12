@@ -35,6 +35,7 @@ export default function Home() {
   }, [images.length]);
 
   return (
+ <>
     <main
       style={{
         position: "relative",
