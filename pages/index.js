@@ -41,8 +41,6 @@ export default function Home() {
         overflow: "hidden", // evita scroll horizontal
         height: "100vh",
         width: "100%", // evita scroll horizontal
-        display: "flex",
-        flexDirection: "column", // apila en vertical
       }}
     >
 
@@ -108,9 +106,8 @@ export default function Home() {
 {/* Contenedor del carrusel */}
 <div
   style={{
-    flex: 1,
     display: "flex",
-    height: "calc(100vh - 40px)", // altura total menos la barra de menú
+    height: "calc(100vh - 80px)", // altura total menos la barra de menú
     width: `${images.length * 100}vw`,
     transform: `translateX(-${currentIndex * 100}vw)`,
     transition: "transform 1s ease-in-out",
