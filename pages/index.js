@@ -171,17 +171,16 @@ export default function Home() {
   </div>
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
-  
+
+  {/* Línea blanca al final de la página */}
+      <div
+        style={{
+          width: "100%",
+          height: "2px",          // grosor de la línea
+          backgroundColor: "#fff" // color blanco
+        }}
+      ></div>
+        
     </main>
-
-{/* Línea blanca al final de la página */}
-<div
-  style={{
-    width: "100%",
-    height: "2px",          // grosor de la línea
-    backgroundColor: "#fff" // color blanco
-  }}
-></div>
-
   );
 }
