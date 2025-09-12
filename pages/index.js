@@ -171,16 +171,21 @@ export default function Home() {
   </div>
   <div className={montserratLight.className}>Consultoría y Venta de productos</div>
 </div>
-
- {/* Barra inferior */}
-<div
-  style={{
-    width: "100%",           // ancho completo
-    height: "10px",           // grosor de la barra
-    backgroundColor: "#E0E0E0", // color grafito claro para contraste
-    marginTop: "0",          // se pega al final del contenido
-  }}
-></div> 
     </main>
+  
+<footer
+  style={{
+    width: "100%",            // ocupa todo el ancho
+    backgroundColor: "#fff",  // color de la barra (blanco)
+    color: "orange",          // color del texto
+    textAlign: "center",      // centrado horizontal
+    padding: "0.5rem 0",      // altura de la barra
+    fontSize: "0.9rem",       // tamaño del texto
+    letterSpacing: "1px",     // espaciado entre letras
+  }}
+>
+  © 2025 Cerredes SpA
+</footer>
+
   );
 }
