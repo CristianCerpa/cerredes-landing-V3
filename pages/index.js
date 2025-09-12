@@ -109,7 +109,7 @@ export default function Home() {
       bottom: 0,
       left: 0,
       width: "100%",
-      height: "10px",       // grosor de la línea
+      height: "1px",       // grosor de la línea
       backgroundColor: "#fff", // color blanco
     }}
   ></div>
