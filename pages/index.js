@@ -110,7 +110,7 @@ export default function Home() {
       left: 0,
       width: "100%",
       height: "1px",       // grosor de la línea
-      backgroundColor: "#fff", // color blanco
+      backgroundColor: #E0E0E0, // gris claro
     }}
   ></div>
           
