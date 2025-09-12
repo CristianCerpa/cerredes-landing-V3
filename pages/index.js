@@ -174,7 +174,7 @@ export default function Home() {
     zIndex: 20,              // encima del carrusel
   }}
 >
-  © 2025 Cerredes SpA
+  © 2025 Cerredes
 </div>
     </main>
   );
