@@ -180,12 +180,12 @@ export default function Home() {
     backgroundColor: "#fff",  // color de la barra (blanco)
     color: "orange",          // color del texto
     textAlign: "center",      // centrado horizontal
-    padding: "0.5rem 0",      // altura de la barra
+    padding: "0.2rem 0",      // altura de la barra
     fontSize: "0.9rem",       // tamaño del texto
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
-  © 2025 Cerredes SpA
+  © 2025 Cerredes Spa
 </footer>
  </>
   );
