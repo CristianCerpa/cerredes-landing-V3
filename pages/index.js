@@ -181,8 +181,8 @@ className={figtree.className}
     backgroundColor: "#fff",  // color de la barra (blanco)
     color: "#000000",          // color del texto
     textAlign: "center",      // centrado horizontal
-    padding: "0.1rem 0",      // altura de la barra
-    fontSize: "0.5rem",       // tamaño del texto
+    padding: "0.5rem 0",      // altura de la barra
+    fontSize: "0.8rem",       // tamaño del texto
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
