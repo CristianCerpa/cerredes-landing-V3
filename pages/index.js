@@ -61,7 +61,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "0.2rem 2rem", // margen del logo a la izquierda
+          padding: "0.5rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
           background: "#1a1a1a",
         }}
@@ -116,7 +116,7 @@ export default function Home() {
       bottom: 0,
       left: 0,
       width: "100%",
-      height: "10px",       // grosor de la línea
+      height: "15px",       // grosor de la línea
       backgroundColor: "#111111", // gris claro
     }}
   ></div>
