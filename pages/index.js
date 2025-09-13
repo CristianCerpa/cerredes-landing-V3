@@ -186,7 +186,7 @@ className={figtree.className}
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
-  © 2025 Cerredes SpA
+  © 2025 Cerredes Spa
 </footer>
  </>
   );
