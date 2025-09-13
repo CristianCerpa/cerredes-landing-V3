@@ -62,7 +62,7 @@ export default function Home() {
           alignItems: "center",
           padding: "0.3rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
-          background: "linear-gradient(to right, #1a1a1a, #2c2c2c, #444444, #2c2c2c, #1a1a1a)",
+          background: "#000",
         }}
       >
         {/* Logo */}
@@ -116,7 +116,7 @@ export default function Home() {
       left: 0,
       width: "100%",
       height: "1px",       // grosor de la línea
-      backgroundColor: "#E0E0E0", // gris claro
+      backgroundColor: "linear-gradient(to right, #1a1a1a, #2c2c2c, #444444, #2c2c2c, #1a1a1a)", // gris claro
     }}
   ></div>
           
@@ -183,7 +183,7 @@ export default function Home() {
 className={roboto.className}
   style={{
     width: "100%",            // ocupa todo el ancho
-    backgroundColor: "#fff",  // color de la barra (blanco)
+    backgroundColor: "#000",  // color de la barra (blanco)
     color: "#1a1a1a",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.5rem 0",      // altura de la barra
