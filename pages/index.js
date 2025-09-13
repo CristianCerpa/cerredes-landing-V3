@@ -47,7 +47,7 @@ export default function Home() {
         overflow: "hidden", // evita scroll horizontal
         height: "100vh",
         width: "100%", // evita scroll horizontal
-        backgroundColor: "#000000", // 🔹 fondo negro total
+        backgroundColor: ""#121212", // 🔹 fondo negro total
       }}
     >
 
