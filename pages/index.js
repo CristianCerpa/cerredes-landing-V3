@@ -184,7 +184,7 @@ className={roboto.className}
   style={{
     width: "100%",            // ocupa todo el ancho
     backgroundColor: "#fff",  // color de la barra (blanco)
-    color: "#000000",          // color del texto
+    color: "#1a1a1a",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.5rem 0",      // altura de la barra
     fontSize: "0.9rem",       // tamaño del texto
