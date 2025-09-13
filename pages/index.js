@@ -188,7 +188,7 @@ className={roboto.className}
     color: "#fff",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.5rem 0",      // altura de la barra
-    fontSize: "0.5rem",       // tamaño del texto
+    fontSize: "0.3rem",       // tamaño del texto
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
