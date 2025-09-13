@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Figtree } from "next/font/google";
 import { Montserrat } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 const figtree = Figtree({ 
   weight: "400",   // Regular
@@ -13,6 +14,10 @@ const montserratLight = Montserrat({
 });
 const montserratMedium = Montserrat({
   weight: "500", // Medium
+  subsets: ["latin"],
+});
+const roboto = Roboto({
+  weight: "400", // regular
   subsets: ["latin"],
 });
 
@@ -175,14 +180,14 @@ export default function Home() {
     </main>
   
 <footer
-className={figtree.className}
+className={roboto.className}
   style={{
     width: "100%",            // ocupa todo el ancho
     backgroundColor: "#fff",  // color de la barra (blanco)
     color: "#000000",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.5rem 0",      // altura de la barra
-    fontSize: "0.8rem",       // tamaño del texto
+    fontSize: "0.9rem",       // tamaño del texto
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
