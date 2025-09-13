@@ -62,7 +62,7 @@ export default function Home() {
           alignItems: "center",
           padding: "0.3rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
-          background: "#000",
+          background: "#1a1a1a",
         }}
       >
         {/* Logo */}
@@ -183,7 +183,7 @@ export default function Home() {
 className={roboto.className}
   style={{
     width: "100%",            // ocupa todo el ancho
-    backgroundColor: "#000",  // color de la barra (blanco)
+    backgroundColor: "#1a1a1a",  // color de la barra (blanco)
     color: "#fff",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.5rem 0",      // altura de la barra
