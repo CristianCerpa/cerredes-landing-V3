@@ -60,7 +60,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "1rem 2rem", // margen del logo a la izquierda
+          padding: "0.5rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
           background: "linear-gradient(to right, #1a1a1a, #2c2c2c, #444444, #2c2c2c, #1a1a1a)",
         }}
