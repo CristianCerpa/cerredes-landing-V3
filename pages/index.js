@@ -184,7 +184,7 @@ export default function Home() {
 className={roboto.className}
   style={{
     width: "100%",            // ocupa todo el ancho
-    backgroundColor: "#1a1a1a",  // color de la barra (blanco)
+    backgroundColor: "#121212",  // color de la barra (blanco)
     color: "#fff",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.5rem 0",      // altura de la barra
