@@ -116,7 +116,7 @@ export default function Home() {
       bottom: 0,
       left: 0,
       width: "100%",
-      height: "4px",       // grosor de la línea
+      height: "10px",       // grosor de la línea
       backgroundColor: "orange", // gris claro
     }}
   ></div>
