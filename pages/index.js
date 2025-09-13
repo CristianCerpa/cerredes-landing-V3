@@ -191,7 +191,7 @@ className={roboto.className}
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
-  © 2025 Cerredes Spa
+  © 2025 cerredes spa
 </footer>
  </>
   );
