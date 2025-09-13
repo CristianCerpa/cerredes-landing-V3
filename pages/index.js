@@ -47,7 +47,7 @@ export default function Home() {
         overflow: "hidden", // evita scroll horizontal
         height: "100vh",
         width: "100%", // evita scroll horizontal
-        backgroundColor: "#121212", // 🔹 fondo negro total
+        backgroundColor: "#111111", // 🔹 fondo negro total
       }}
     >
 
@@ -117,7 +117,7 @@ export default function Home() {
       left: 0,
       width: "100%",
       height: "10px",       // grosor de la línea
-      backgroundColor: "orange", // gris claro
+      backgroundColor: "#111111", // gris claro
     }}
   ></div>
           
@@ -184,7 +184,7 @@ export default function Home() {
 className={roboto.className}
   style={{
     width: "100%",            // ocupa todo el ancho
-    backgroundColor: "#121212",  // color de la barra (blanco)
+    backgroundColor: "#111111",  // color de la barra (blanco)
     color: "#fff",          // color del texto
     textAlign: "center",      // centrado horizontal
     padding: "0.5rem 0",      // altura de la barra
