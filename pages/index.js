@@ -116,7 +116,7 @@ export default function Home() {
       left: 0,
       width: "100%",
       height: "1px",       // grosor de la línea
-      backgroundColor: "linear-gradient(to right, #1a1a1a, #2c2c2c, #444444, #2c2c2c, #1a1a1a)", // gris claro
+      backgroundColor: "#0d0d0d", // gris claro
     }}
   ></div>
           
