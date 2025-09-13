@@ -63,7 +63,7 @@ export default function Home() {
           alignItems: "center",
           padding: "0.5rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
-          background: "#1a1a1a",
+          background: "#2c2c2c",
         }}
       >
         {/* Logo */}
