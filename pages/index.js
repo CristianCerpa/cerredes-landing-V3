@@ -61,7 +61,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "0.4rem 2rem", // margen del logo a la izquierda
+          padding: "0.6rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
           background: "#2c2c2c",
         }}
