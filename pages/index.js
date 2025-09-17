@@ -61,7 +61,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "flex-start",
-          padding: "0.5rem 2rem", // margen del logo a la izquierda
+          padding: "0.4rem 2rem", // margen del logo a la izquierda
           zIndex: 10,
           background: "#2c2c2c",
         }}
@@ -97,7 +97,7 @@ export default function Home() {
         color: "#fff",
         cursor: "pointer",
         transition: "color 0.3s ease",
-        paddingBottom: "0.5rem",
+        paddingBottom: "0.4rem",
       }}
       onMouseEnter={(e) => (e.target.style.color = "orange")}
       onMouseLeave={(e) => (e.target.style.color = "#fff")}
