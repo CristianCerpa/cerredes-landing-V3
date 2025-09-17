@@ -97,7 +97,7 @@ export default function Home() {
         color: "#fff",
         cursor: "pointer",
         transition: "color 0.3s ease",
-        paddingBottom: "1rem",
+        paddingBottom: "0.5rem",
       }}
       onMouseEnter={(e) => (e.target.style.color = "orange")}
       onMouseLeave={(e) => (e.target.style.color = "#fff")}
