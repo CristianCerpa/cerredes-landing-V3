@@ -67,7 +67,7 @@ export default function Home() {
         }}
       >
         {/* Logo */}
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
           <Image src="/logo.png" alt="Logo" width={180} height={80} />
         </div
           className={montserratLight.className}
@@ -75,6 +75,7 @@ export default function Home() {
           >
 Tu frase aquí
   </div>
+</div>
 
         {/* Menú + carrito */}
         <nav
