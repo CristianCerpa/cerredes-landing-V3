@@ -74,7 +74,7 @@ export default function Home() {
     className={montserratLight.className}
     style={{
       position: "absolute",
-      bottom: "-18px",   // baja la frase un poco
+      bottom: "-5px",   // baja la frase un poco
       left: "0",
       color: "#ffffff",
       fontSize: "0.8rem",
