@@ -69,8 +69,13 @@ export default function Home() {
         {/* Logo */}
         <div>
           <Image src="/logo.png" alt="Logo" width={180} height={80} />
-        </div>
-
+        </div
+          className={montserratLight.className}
+    style={{ color: '#ffffff', fontSize: '0.75rem', marginTop: '4px', lineHeight: 1 }}  
+          >
+Tu frase aquí
+  </div>
+</div>
         {/* Menú + carrito */}
         <nav
           style={{
