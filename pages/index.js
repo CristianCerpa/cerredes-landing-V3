@@ -66,16 +66,18 @@ export default function Home() {
           background: "#2c2c2c",
         }}
       >
-        {/* Logo */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-          <Image src="/logo.png" alt="Logo" width={180} height={80} />
-        </div
-          className={montserratLight.className}
-    style={{ color: '#ffffff', fontSize: '0.75rem', marginTop: '4px', lineHeight: 1 }}  
-          >
-Tu frase aquí
+
+{/* Logo + frase debajo */}
+<div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+  <Image src="/logo.png" alt="Logo" width={180} height={80} />
+  <div
+    className={montserratLight.className}
+    style={{ color: "#ffffff", fontSize: "0.75rem", marginTop: "4px", lineHeight: 1 }}
+  >
+    Tu frase aquí
   </div>
 </div>
+
 
         {/* Menú + carrito */}
         <nav
