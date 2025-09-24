@@ -67,15 +67,20 @@ export default function Home() {
         }}
       >
 
-{/* Logo con frase delante */}
-<div style={{ position: "relative", display: "inline-block" }}>
-  <Image src="/logo.png" alt="Logo" width={180} height={80} />
+<div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+  {/* Logo */}
+  <Image
+    src="/logo.png"
+    alt="Logo"
+    width={180}   // ajusta el tamaño si quieres más grande/pequeño
+    height={80}
+  />
+
+  {/* Frase */}
   <span
     className={montserratLight.className}
     style={{
-      position: "absolute",
-      bottom: "-5px",   // baja la frase un poco
-      left: "0",
+      marginTop: "4px",   // separación entre logo y frase
       color: "#ffffff",
       fontSize: "0.8rem",
       lineHeight: 1,
