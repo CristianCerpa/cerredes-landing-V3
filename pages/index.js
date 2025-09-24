@@ -68,7 +68,7 @@ export default function Home() {
       >
         {/* Logo */}
         <div>
-          <Image src="/logo.png" alt="Logo" width={150} height={70} />
+          <Image src="/logo.png" alt="Logo" width={180} height={80} />
         </div>
 
         {/* Menú + carrito */}
