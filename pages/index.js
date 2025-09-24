@@ -74,7 +74,7 @@ export default function Home() {
     className={montserratLight.className}
     style={{ color: "#ffffff", fontSize: "0.75rem", marginTop: "4px", lineHeight: 1 }}
   >
-    Tu frase aquí
+    Conectividad y Redes
   </div>
 </div>
 
