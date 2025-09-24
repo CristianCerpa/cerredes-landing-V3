@@ -75,7 +75,7 @@ export default function Home() {
           >
 Tu frase aquí
   </div>
-</div>
+
         {/* Menú + carrito */}
         <nav
           style={{
