@@ -67,17 +67,23 @@ export default function Home() {
         }}
       >
 
-{/* Logo + frase debajo */}
-<div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+{/* Logo con frase delante */}
+<div style={{ position: "relative", display: "inline-block" }}>
   <Image src="/logo.png" alt="Logo" width={180} height={80} />
-  <div
+  <span
     className={montserratLight.className}
-    style={{ color: "#ffffff", fontSize: "0.75rem", marginTop: "4px", lineHeight: 1 }}
+    style={{
+      position: "absolute",
+      bottom: "-18px",   // baja la frase un poco
+      left: "0",
+      color: "#ffffff",
+      fontSize: "0.8rem",
+      lineHeight: 1,
+    }}
   >
-    Conectividad y Redes
-  </div>
+    Tu frase aquí
+  </span>
 </div>
-
 
         {/* Menú + carrito */}
         <nav
