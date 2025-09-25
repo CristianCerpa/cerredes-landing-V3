@@ -172,7 +172,7 @@ export default function Home() {
     letterSpacing: "1px",
   }}
 >
-  Consultoría y Venta de Equipos de Conectividad y Redes
+  Conectividad y Redes
 </div>
 
 
