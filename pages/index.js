@@ -121,7 +121,26 @@ export default function Home() {
       backgroundColor: "#111111", // gris claro
     }}
   ></div>
-          
+
+
+
+{/* Texto encima de la barra */}
+<div
+  style={{
+    width: "100%",
+    backgroundColor: "#111111", // fondo negro
+    color: "#ffffff", // texto blanco
+    textAlign: "center",
+    padding: "0.3rem 0",
+    fontSize: "0.9rem",
+    letterSpacing: "1px",
+  }}
+>
+  Conectividad y Redes
+</div>
+
+
+    
       </header>
 
 {/* Contenedor del carrusel */}
@@ -159,24 +178,6 @@ export default function Home() {
     </div>
   ))}
 </div>
-
-{/* Texto encima de la barra */}
-<div
-  style={{
-    width: "100%",
-    backgroundColor: "#111111", // fondo negro
-    color: "#ffffff", // texto blanco
-    textAlign: "center",
-    padding: "0.3rem 0",
-    fontSize: "0.9rem",
-    letterSpacing: "1px",
-  }}
->
-  Conectividad y Redes
-</div>
-
-
-
 
 {/* Texto encima */}
 <div
