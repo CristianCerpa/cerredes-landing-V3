@@ -66,29 +66,10 @@ export default function Home() {
           background: "#2c2c2c",
         }}
       >
-
-<div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-  {/* Logo */}
-  <Image
-    src="/logo.png"
-    alt="Logo"
-    width={180}   // ajusta el tamaño si quieres más grande/pequeño
-    height={80}
-  />
-
-  {/* Frase */}
-  <span
-    className={montserratLight.className}
-    style={{
-      marginTop: "4px",   // separación entre logo y frase
-      color: "#ffffff",
-      fontSize: "0.8rem",
-      lineHeight: 1,
-    }}
-  >
-    Tu frase aquí
-  </span>
-</div>
+        {/* Logo */}
+        <div>
+          <Image src="/logo.png" alt="Logo" width={180} height={80} />
+        </div>
 
         {/* Menú + carrito */}
         <nav
