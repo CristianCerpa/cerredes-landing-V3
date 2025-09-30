@@ -73,7 +73,7 @@ export default function Home() {
           {/* Botón hamburguesa (solo móvil) */}
           <div
             onClick={() => setMenuOpen(!menuOpen)}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", marginTop: "-10px" }}
             className="hamburger"
           >
             <div style={{ width: "25px", height: "3px", backgroundColor: "#fff", margin: "5px 0" }}></div>
