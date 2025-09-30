@@ -90,7 +90,7 @@ export default function Home() {
                 flexDirection: "column",
                 position: "absolute",
                 top: "60px",
-                right: "0.1rem",
+                right: "2rem",
                 backgroundColor: "#2c2c2c",
                 listStyle: "none",
                 gap: "1rem",
