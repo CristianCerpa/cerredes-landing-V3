@@ -51,7 +51,7 @@ export default function Home() {
       }}
     >
 
-      {/* Header con logo, menú /}
+      {/* Header con logo, menú */}
       <header
         style={{
           position: "absolute",
