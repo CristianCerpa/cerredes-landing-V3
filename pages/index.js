@@ -106,6 +106,7 @@ export default function Home() {
     </li>
   ))}
 </ul>
+</nav>
 
 {/* Línea negra inferior */}
   <div
