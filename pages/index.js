@@ -51,7 +51,7 @@ export default function Home() {
       }}
     >
 
-      {/* Header con logo, menú y carrito */}
+      {/* Header con logo, menú /}
       <header
         style={{
           position: "absolute",
@@ -107,10 +107,7 @@ export default function Home() {
   ))}
 </ul>
 
-{/* Carrito de compras */}
-        </nav>
-
-{/* Línea blanca inferior */}
+{/* Línea negra inferior */}
   <div
     style={{
       position: "absolute",
@@ -193,7 +190,7 @@ className={roboto.className}
     letterSpacing: "1px",     // espaciado entre letras
   }}
 >
-  © 2025 Cerredes Spa
+  © 2025 cerredes spa
 </footer>
  </>
   );
