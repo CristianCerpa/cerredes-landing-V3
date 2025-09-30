@@ -90,7 +90,7 @@ export default function Home() {
                 flexDirection: "column",
                 position: "absolute",
                 top: "60px",
-                right: "2rem",
+                right: "0.5rem",
                 backgroundColor: "#2c2c2c",
                 listStyle: "none",
                 gap: "1rem",
@@ -198,7 +198,7 @@ export default function Home() {
           letterSpacing: "1px",
         }}
       >
-        © 2025 cerredes SpA
+        © 2025 Cerredes SpA
       </footer>
 
       {/* Estilos responsivos */}
