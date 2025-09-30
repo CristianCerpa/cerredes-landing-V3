@@ -95,6 +95,7 @@ export default function Home() {
                 listStyle: "none",
                 gap: "1rem",
                 padding: "1rem",
+                zIndex: 20,
               }}
             >
               {["Inicio", "Servicios", "Productos", "Contacto"].map((item, i) => (
