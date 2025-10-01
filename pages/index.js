@@ -171,6 +171,7 @@ export default function Home() {
     right: "60px",
     zIndex: 100,
     transition: "transform 0.3s ease-in-out",
+    animation: bounce 3s infinite;
   }}
   onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
   onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
