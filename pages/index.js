@@ -4,30 +4,13 @@ import { Figtree } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import { Roboto } from "next/font/google";
 
-const figtree = Figtree({ 
-  weight: "400",
-  subsets: ["latin"] 
-});
-const montserratLight = Montserrat({
-  weight: "200",
-  subsets: ["latin"],
-});
-const montserratMedium = Montserrat({
-  weight: "500",
-  subsets: ["latin"],
-});
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
-});
+const figtree = Figtree({ weight: "400", subsets: ["latin"] });
+const montserratLight = Montserrat({ weight: "200", subsets: ["latin"] });
+const montserratMedium = Montserrat({ weight: "500", subsets: ["latin"] });
+const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
-  const images = [
-    "/fondo1.jpeg",
-    "/fondo2.jpeg",
-    "/fondo3.jpeg",
-    "/fondo4.jpeg",
-  ];
+  const images = ["/fondo1.jpeg", "/fondo2.jpeg", "/fondo3.jpeg", "/fondo4.jpeg"];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,15 +48,13 @@ export default function Home() {
             background: "#2c2c2c",
           }}
         >
-          {/* Logo */}
           <div>
             <Image src="/logo.png" alt="Logo" width={180} height={80} />
           </div>
 
-          {/* Botón hamburguesa (solo móvil) */}
           <div
             onClick={() => setMenuOpen(!menuOpen)}
-             style={{ cursor: "pointer", marginTop: "-10px", marginLeft: "60px" }}
+            style={{ cursor: "pointer", marginTop: "-10px", marginLeft: "60px" }}
             className="hamburger"
           >
             <div style={{ width: "25px", height: "3px", backgroundColor: "#fff", margin: "5px 0" }}></div>
@@ -81,7 +62,6 @@ export default function Home() {
             <div style={{ width: "25px", height: "3px", backgroundColor: "#fff", margin: "5px 0" }}></div>
           </div>
 
-          {/* Menú */}
           <nav style={{ display: "flex", alignItems: "center", gap: "2rem", marginRight: "5rem" }}>
             <ul
               className={figtree.className}
@@ -116,7 +96,6 @@ export default function Home() {
             </ul>
           </nav>
 
-          {/* Línea negra inferior */}
           <div
             style={{
               position: "absolute",
@@ -129,7 +108,7 @@ export default function Home() {
           ></div>
         </header>
 
-        {/* Contenedor del carrusel */}
+        {/* Carrusel */}
         <div
           style={{
             display: "flex",
@@ -155,11 +134,7 @@ export default function Home() {
                 alt={`Fondo ${i + 1}`}
                 fill
                 priority={i === 0}
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "center",
-                  backgroundColor: "black",
-                }}
+                style={{ objectFit: "cover", objectPosition: "center", backgroundColor: "black" }}
               />
             </div>
           ))}
@@ -184,6 +159,21 @@ export default function Home() {
           </div>
           <div className={montserratLight.className}>Consultoría y Venta de productos</div>
         </div>
+
+        {/* Botón WhatsApp flotante */}
+        <a
+          href="https://wa.me/56912345678"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 100,
+          }}
+        >
+          <Image src="/whatsapp.svg" alt="WhatsApp" width={60} height={60} />
+        </a>
       </main>
 
       {/* Footer */}
@@ -202,7 +192,6 @@ export default function Home() {
         © 2025 Cerredes SpA
       </footer>
 
-      {/* Estilos responsivos */}
       <style jsx>{`
         @media (min-width: 768px) {
           .hamburger {
