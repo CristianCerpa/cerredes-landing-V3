@@ -168,14 +168,14 @@ export default function Home() {
   style={{
     position: "fixed",
     bottom: "20px",
-    right: "80px",
+    right: "60px",
     zIndex: 100,
     transition: "transform 0.3s ease-in-out",
   }}
   onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
   onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
 >
-  <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
+  <Image src="/whatsapp.svg" alt="WhatsApp" width={70} height={70} />
 </a>
       </main>
 
