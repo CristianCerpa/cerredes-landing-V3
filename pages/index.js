@@ -175,7 +175,7 @@ export default function Home() {
   onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
   onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
 >
-  <Image src="/whatsapp.svg" alt="WhatsApp" width={60} height={60} />
+  <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
 </a>
       </main>
 
