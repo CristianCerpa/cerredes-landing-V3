@@ -168,7 +168,7 @@ export default function Home() {
   style={{
     position: "fixed",
     bottom: "20px",
-    right: "20px",
+    right: "40px",
     zIndex: 100,
     transition: "transform 0.3s ease-in-out",
   }}
