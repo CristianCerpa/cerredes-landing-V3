@@ -160,16 +160,20 @@ export default function Home() {
           <div className={montserratLight.className}>Consultoría y Venta de productos</div>
         </div>
 
-{/* Botón WhatsApp flotante */}
-<a
-  href="https://wa.me/+56984513933"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="whatsapp-float"
->
-  <Image src="/whatsapp.svg" alt="WhatsApp" width={70} height={70} />
-</a>
-
+        {/* Botón WhatsApp flotante */}
+        <a
+          href="https://wa.me/56912345678"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            zIndex: 100,
+          }}
+        >
+          <Image src="/whatsapp.png" alt="WhatsApp" width={60} height={60} />
+        </a>
       </main>
 
       {/* Footer */}
@@ -188,33 +192,26 @@ export default function Home() {
         © 2025 Cerredes SpA
       </footer>
 
-     <style jsx>{`
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 60px;
-    z-index: 100;
-    transition: transform 0.3s ease-in-out;
-    animation: bounce 3s infinite;
-    display: inline-block;
-  }
-
-  .whatsapp-float:hover {
-    transform: scale(1.2);
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
-  }
-`}</style>
+      <style jsx>{`
+        @media (min-width: 768px) {
+          .hamburger {
+            display: none;
+          }
+          ul {
+            display: flex !important;
+            flex-direction: row !important;
+            position: static !important;
+            background: none !important;
+            gap: 2rem !important;
+            padding: 0 !important;
+          }
+        }
+        @media (max-width: 767px) {
+          .hamburger {
+            display: block;
+          }
+        }
+      `}</style>
     </>
   );
 }
