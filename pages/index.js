@@ -168,12 +168,12 @@ export default function Home() {
           style={{
             position: "fixed",
             bottom: "20px",
-            right: "20px",
+            right: "40px",
             zIndex: 100,
           }}
         >
-          <Image src="/whatsapp.png" alt="WhatsApp" width={60} height={60} />
-        </a>
+          <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
+        </a
       </main>
 
       {/* Footer */}
