@@ -161,19 +161,23 @@ export default function Home() {
         </div>
 
         {/* Botón WhatsApp flotante */}
-        <a
-          href="https://wa.me/56984513933"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            position: "fixed",
-            bottom: "20px",
-            right: "40px",
-            zIndex: 100,
-          }}
-        >
-          <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
-        </a>
+<a
+  href="https://wa.me/+56984513933"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "40px",
+    zIndex: 100,
+    transition: "transform 0.3s ease-in-out",
+  }}
+  onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
+  onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+>
+  <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
+</a>
+
       </main>
 
       {/* Footer */}
