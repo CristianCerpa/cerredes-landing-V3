@@ -78,7 +78,7 @@ export default function Home() {
                 zIndex: 20,
               }}
             >
-              {["Inicio", "Servicios", "Productos", "Contacto"].map((item, i) => (
+              {["Inicio", "Nosotros", "Servicios", "Productos", "Contacto"].map((item, i) => (
                 <li
                   key={i}
                   style={{
