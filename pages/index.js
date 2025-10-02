@@ -173,7 +173,7 @@ export default function Home() {
           }}
         >
           <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
-        </a
+        </a>
       </main>
 
       {/* Footer */}
