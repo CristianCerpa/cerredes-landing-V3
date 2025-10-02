@@ -14,7 +14,6 @@ export default function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [submenuOpen, setSubmenuOpen] = useState(false); // para móvil
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -79,105 +78,21 @@ export default function Home() {
                 zIndex: 20,
               }}
             >
-              <li
-                style={{
-                  color: "#fff",
-                  cursor: "pointer",
-                  transition: "color 0.3s ease",
-                  paddingBottom: "0.5rem",
-                }}
-                onMouseEnter={(e) => (e.target.style.color = "orange")}
-                onMouseLeave={(e) => (e.target.style.color = "#fff")}
-              >
-                Inicio
-              </li>
-              <li
-                style={{
-                  color: "#fff",
-                  cursor: "pointer",
-                  transition: "color 0.3s ease",
-                  paddingBottom: "0.5rem",
-                }}
-                onMouseEnter={(e) => (e.target.style.color = "orange")}
-                onMouseLeave={(e) => (e.target.style.color = "#fff")}
-              >
-                Nosotros
-              </li>
-
-              {/* Servicios con submenu */}
-              <li
-                style={{
-                  color: "#fff",
-                  cursor: "pointer",
-                  transition: "color 0.3s ease",
-                  paddingBottom: "0.5rem",
-                  position: "relative",
-                }}
-                onClick={() => setSubmenuOpen(!submenuOpen)} // en móvil abre/cierra
-                onMouseEnter={(e) => (e.target.style.color = "orange")}
-                onMouseLeave={(e) => (e.target.style.color = "#fff")}
-              >
-                Servicios
-                <ul
+              {["Inicio", "Nosotros", "Servicios", "Productos", "Contacto"].map((item, i) => (
+                <li
+                  key={i}
                   style={{
-                    display: submenuOpen || menuOpen === false ? "none" : "block",
+                    color: "#fff",
+                    cursor: "pointer",
+                    transition: "color 0.3s ease",
+                    paddingBottom: "0.5rem",
                   }}
-                ></ul>
-                <ul
-                  className="submenu"
-                  style={{
-                    display: submenuOpen || menuOpen ? "block" : "none",
-                    position: menuOpen ? "static" : "absolute",
-                    top: menuOpen ? "0" : "100%",
-                    left: 0,
-                    backgroundColor: "#2c2c2c",
-                    listStyle: "none",
-                    padding: "0.5rem 1rem",
-                    margin: 0,
-                    zIndex: 30,
-                  }}
+                  onMouseEnter={(e) => (e.target.style.color = "orange")}
+                  onMouseLeave={(e) => (e.target.style.color = "#fff")}
                 >
-                  {["SD-WAN", "WiFi", "Internet", "MPLS"].map((sub, idx) => (
-                    <li
-                      key={idx}
-                      style={{
-                        color: "#fff",
-                        padding: "0.3rem 0",
-                        cursor: "pointer",
-                      }}
-                      onMouseEnter={(e) => (e.target.style.color = "orange")}
-                      onMouseLeave={(e) => (e.target.style.color = "#fff")}
-                    >
-                      {sub}
-                    </li>
-                  ))}
-                </ul>
-              </li>
-
-              <li
-                style={{
-                  color: "#fff",
-                  cursor: "pointer",
-                  transition: "color 0.3s ease",
-                  paddingBottom: "0.5rem",
-                }}
-                onMouseEnter={(e) => (e.target.style.color = "orange")}
-                onMouseLeave={(e) => (e.target.style.color = "#fff")}
-              >
-                Productos
-              </li>
-              <li
-                style={{
-                  color: "#fff",
-                  cursor: "pointer",
-                  transition: "color 0.3s ease",
-                  paddingBottom: "0.5rem",
-                }}
-                onMouseEnter={(e) => (e.target.style.color = "orange")}
-                onMouseLeave={(e) => (e.target.style.color = "#fff")}
-              >
-                Contacto
-              </li>
+                  {item}
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -246,22 +161,23 @@ export default function Home() {
         </div>
 
         {/* Botón WhatsApp flotante */}
-        <a
-          href="https://wa.me/+56984513933"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            position: "fixed",
-            bottom: "20px",
-            right: "40px",
-            zIndex: 100,
-            transition: "transform 0.3s ease-in-out",
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
-          onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-        >
-          <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
-        </a>
+<a
+  href="https://wa.me/+56984513933"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "40px",
+    zIndex: 100,
+    transition: "transform 0.3s ease-in-out",
+  }}
+  onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.2)")}
+  onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+>
+  <Image src="/whatsapp.svg" alt="WhatsApp" width={80} height={80} />
+</a>
+
       </main>
 
       {/* Footer */}
@@ -293,28 +209,14 @@ export default function Home() {
             gap: 2rem !important;
             padding: 0 !important;
           }
-          /* submenu solo en PC con hover */
-          li:hover > .submenu {
-            display: block !important;
-          }
-          .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #2c2c2c;
-          }
         }
         @media (max-width: 767px) {
           .hamburger {
             display: block;
-          }
-          .submenu {
-            position: static !important;
-            background: none !important;
           }
         }
       `}</style>
     </>
   );
 }
+
