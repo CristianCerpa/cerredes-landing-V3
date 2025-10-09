@@ -200,6 +200,7 @@ export default function Home() {
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
        @media (min-width: 768px) {
           .hamburger {
