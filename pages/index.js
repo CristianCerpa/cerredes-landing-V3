@@ -205,7 +205,15 @@ html, body {
   background-color: #111111;
   overflow-x: hidden;
 }
-       @media (min-width: 768px) {
+#__next {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111111;
+}
+       
+@media (min-width: 768px) {
           .hamburger {
             display: none;
           }
