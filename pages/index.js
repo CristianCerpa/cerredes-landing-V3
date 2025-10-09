@@ -113,8 +113,8 @@ export default function Home() {
           style={{
             display: "flex",
             height: "calc(100vh - 80px)",
-            width: `${images.length * 100}vw`,
-            transform: `translateX(-${currentIndex * 100}vw)`,
+            width: "100%",
+            transform: `translateX(-${currentIndex * 100}%)`,
             transition: "transform 1s ease-in-out",
             marginTop: "80px",
           }}
@@ -124,7 +124,7 @@ export default function Home() {
               key={i}
               style={{
                 position: "relative",
-                flex: "0 0 100vw",
+                flex: "0 0 100%",
                 height: "100%",
                 flexShrink: 0,
               }}
