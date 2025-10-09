@@ -197,7 +197,11 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
-        @media (min-width: 768px) {
+html, body {
+  margin: 0;
+  padding: 0;
+}
+       @media (min-width: 768px) {
           .hamburger {
             display: none;
           }
